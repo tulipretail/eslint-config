@@ -8,13 +8,15 @@
     "eslint-plugin"
   ],
   "author": "Connor Wilson",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"No tests at this time.\""
   },
-  "dependencies": {
-    "requireindex": "~1.1.0"
+  "repository": {
+    "type": "git",
+    "url": "git@git.internal.tulip.io:apps/webnext/eslint-config.git"
   },
+  "dependencies": {},
   "devDependencies": {
     "eslint": "^4.19.0",
     "eslint-config-airbnb": "^16.1.0",
