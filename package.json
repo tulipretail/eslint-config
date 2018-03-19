@@ -10,13 +10,14 @@
   "author": "Connor Wilson",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No tests at this time.\""
+    "test": "eslint index.js"
   },
   "repository": {
     "type": "git",
     "url": "git@git.internal.tulip.io:apps/webnext/eslint-config.git"
   },
   "dependencies": {
+    "babel-eslint": "^7.2.3",
     "eslint": "^4.19.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.9.0",
