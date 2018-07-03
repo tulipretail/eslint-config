@@ -1,0 +1,32 @@
+image: docker:latest 
+
+services:
+- docker:dind
+
+stages:
+ - build
+#  - test
+ - publish
+
+before_script:
+  - apk add --update make git 
+  - export DOCKER_HOST=tcp://localhost:2375
+  - echo $GCP_DOCKER_CREDENTIALS | docker login --username _json_key --password-stdin https://gcr.io
+
+build_eslint_config:
+  stage: build 
+  script:
+  - make ci-build
+  - make ci-push
+
+npm_test:
+  stage: test 
+  script:
+  - make ci-test
+
+publish_eslint_config:
+  stage: publish
+  only:
+  - master
+  script:
+  - make ci-publish
