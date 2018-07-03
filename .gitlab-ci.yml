@@ -19,11 +19,6 @@ build_eslint_config:
   - make ci-build
   - make ci-push
 
-npm_test:
-  stage: test 
-  script:
-  - make ci-test
-
 publish_eslint_config:
   stage: publish
   only:
