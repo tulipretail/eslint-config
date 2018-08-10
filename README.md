@@ -1,22 +1,22 @@
 # Tulip ESLint
 
-This package provides a set of rules for ESLint to be used in your editor of choice. To install, make sure your `.npmrc` is set up for the internal npm registry, and run:
+This package provides a set of rules for ESLint to be used in your editor of choice. To install, simply run:
 
-```
-npm i -D @tulip/eslint-config
+```bash
+npm i -D @tulipjs/eslint-config
 ```
 
 In your `.eslintrc` file, the most simple setup is as follows:
 
 ```json
 {
-	"extends": "@tulip"
+	"extends": "@tulipjs"
 }
 ```
 
 ## Contributing
 
-If you come across a rule you think should be changed, you can open a Merge Request in this repo to start a discussion. Link to the official docs for the rule in question on [ESLint's site](https://eslint.org/) and make your case! This is meant to be a living document and it should evolve over time. Run `npm run test` to make sure you didn't add any ESLint errors to this repo.
+If you come across a rule you think should be changed, you can open an Issue or Pull Request in this repo to start a discussion. Link to the official docs for the rule in question on [ESLint's site](https://eslint.org/) and make your case! This is meant to be a living document and it should evolve over time. Run `npm run test` to make sure you didn't add any ESLint errors to this repo.
 
 ### Branch Naming
 
