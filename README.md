@@ -1,4 +1,6 @@
-# Tulip ESLint
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/10063864/43960413-ecb115fa-9c7f-11e8-9e35-d59cc647e463.png" width="500" alt="Tulip ESLint">
+</p>
 
 This package provides a set of rules for ESLint to be used in your editor of choice. To install, simply run:
 
